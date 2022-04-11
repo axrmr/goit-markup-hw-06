@@ -936,7 +936,6 @@ body {
 }
 
 .checkbox-icon {
-  position: relative;
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -963,6 +962,11 @@ body {
 }
 .checkbox-input:checked ~ .icon-check {
   opacity: 1;
+}
+
+.checkbox-input:focus + .checkbox-icon,
+.checkbox-input:focus ~ .icon-check {
+  border-color: var(--accentColor);
 }
 
 .checkbox-text {
